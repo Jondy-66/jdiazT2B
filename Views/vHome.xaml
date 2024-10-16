@@ -14,11 +14,11 @@
         <Picker x:Name="CompañerosPicker" Title="Selecciona un Compañero">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
-                    <x:String>Compañero 1</x:String>
-                    <x:String>Compañero 2</x:String>
-                    <x:String>Compañero 3</x:String>
-                    <x:String>Compañero 4</x:String>
-                    <x:String>Compañero 5</x:String>
+                    <x:String>Glenda Jimez</x:String>
+                    <x:String>Kevin Vargas</x:String>
+                    <x:String>Marco Reyes</x:String>
+                    <x:String>Diana Estrada</x:String>
+                    <x:String>Marcelo Prado</x:String>
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
