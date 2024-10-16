@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jdiazT2B.Views.vHome"
+             Title="vHome">
+    <VerticalStackLayout Padding="20">
+        <Label 
+            Text="Calificaciones Uisrael"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="24"/>
+
+        <Entry x:Name="NombreE" Placeholder="Nombre del Estudiante" />
+        <Picker x:Name="CompañerosPicker" Title="Selecciona un Compañero">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Compañero 1</x:String>
+                    <x:String>Compañero 2</x:String>
+                    <x:String>Compañero 3</x:String>
+                    <x:String>Compañero 4</x:String>
+                    <x:String>Compañero 5</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Entry x:Name="Seguimiento1" Placeholder="Nota Seguimiento 1" Keyboard="Numeric" />
+        <Entry x:Name="Examen1" Placeholder="Examen 1" Keyboard="Numeric" />
+        <Entry x:Name="Seguimiento2" Placeholder="Nota Seguimiento 2" Keyboard="Numeric" />
+        <Entry x:Name="Examen2" Placeholder="Examen 2" Keyboard="Numeric" />
+
+        <DatePicker x:Name="FechaPicker" />
+
+        <Button Text="Calcular nota" Clicked="Button_Clicked"/>
+
+        <Label x:Name="ResultadoLabel" FontSize="18" TextColor="Black" IsVisible="False" />
+    </VerticalStackLayout>
+</ContentPage>
